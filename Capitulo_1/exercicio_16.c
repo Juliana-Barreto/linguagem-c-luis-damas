@@ -6,7 +6,8 @@
 
 #include <stdio.h>
 
-main ()
+int main ()
 {  
     printf("  *\n ***\n*****\n /|\\\n");
+    getchar();
 }

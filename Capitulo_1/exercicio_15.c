@@ -3,7 +3,8 @@ Bem vindos ao /Mundo\ da programação em "C" */
 
 #include <stdio.h>
 
-main () 
+int main () 
 {
     printf("Bem vindos ao /Mundo\\ da programação em \"C\"\n");
+    getchar();
 }    
