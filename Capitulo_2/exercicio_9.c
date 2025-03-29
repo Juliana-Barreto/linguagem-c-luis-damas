@@ -30,4 +30,5 @@ main()
         return 0;
     }   
     printf ("A data digitada foi: %d/%d/%d\n", dia, mes, ano);
+    getchar();
 }
