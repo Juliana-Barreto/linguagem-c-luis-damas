@@ -3,7 +3,7 @@ e a mostre em seguida no formado dd/mm/aaaa */
 
 #include <stdio.h>
 
-main()
+int main()
 
 {
     int dia, mes, ano;
