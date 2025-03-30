@@ -6,5 +6,4 @@ Bem vindos ao /Mundo\ da programação em "C" */
 int main () 
 {
     printf("Bem vindos ao /Mundo\\ da programação em \"C\"\n");
-    getchar();
 }    

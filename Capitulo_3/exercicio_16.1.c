@@ -10,7 +10,6 @@ int main()
 
     printf("Digite um número inteiro: ");
     scanf("%d", &num);
-
     if (num == 0) 
         printf("O número é igual a zero.\n");
     else 

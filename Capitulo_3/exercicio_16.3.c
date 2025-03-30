@@ -11,9 +11,6 @@ int main()
 
     printf("Digite um número inteiro: ");
     scanf("%d", &num);
-
-    // Em c, 0 representa o valor lógico falso e diferente de zero, verdadeiro
-
     if (num) // Se o número for diferente de zero retorna verdadeiro
         printf("O número é diferente de zero.\n"); 
     else // Se o número for igual a zero, retorna falso

@@ -11,13 +11,8 @@ int main()
 
     printf("Digite um número inteiro: ");
     scanf("%d", &num);
-
-    switch (num) 
-    {
-        case 0:
-            printf("O número é igual a zero.\n");
-            break;
-        default:
-            printf("O número é diferente de zero.\n");
-    }
+    if (!num == 0) 
+        printf("O número é diferente de zero.\n");
+    else 
+        printf("O número é igual a zero.\n");
 }
