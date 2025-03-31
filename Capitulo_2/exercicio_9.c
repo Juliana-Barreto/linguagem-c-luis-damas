@@ -25,5 +25,7 @@ int main()
         printf("Ano inválido\n");
         return 1;}
 
-    printf ("A data digitada foi: %d/%d/%d\n", dia, mes, ano);
+    printf ("A data digitada foi: %02d/%02d/%04d\n", dia, mes, ano);
+    /* 02 e 04 indicam que a parte inteira deve ter 2 e 4 dígitos, respectivamente,
+    completando com 0 se necessário*/
 }

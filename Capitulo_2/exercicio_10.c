@@ -11,5 +11,5 @@ int main()
   if (mes > 12 || mes < 1 || dia > 31 || dia < 1 || ano < 1) {
     printf("Data inválida");
     return 1;} 
-  printf("Data no formato dd/mm/aaaa: %d/%d/%d", dia, mes, ano);
+  printf("Data no formato dd/mm/aaaa: %02d/%02d/%04d", dia, mes, ano);
 }
