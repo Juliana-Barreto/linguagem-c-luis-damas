@@ -7,8 +7,7 @@ Líq     =   68% */
 
 #include <stdio.h>
 
-int main ()
-{
+int main () {
     printf ("Total\t=\t100%%\n");
     printf ("IVA\t=\t17%%\n");  
     printf ("IRS\t=\t15%%\n"); 

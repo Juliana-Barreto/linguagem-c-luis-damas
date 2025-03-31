@@ -11,8 +11,8 @@ int main()
     scanf("%d", &num);
     switch (num) {
         case 0:
-            printf("O número é igual a zero.\n");
-            break;
+            printf("O número é igual a zero.\n"); break;
         default:
-            printf("O número é diferente de zero.\n");}
+            printf("O número é diferente de zero.\n");
+    }
 }

@@ -8,7 +8,6 @@ indique se esse inteiro é ou não igual a zero */
 int main() 
 {
     int num;
-
     printf("Digite um número inteiro: ");
     scanf("%d", &num);
     if (num) // Se o número for diferente de zero retorna verdadeiro

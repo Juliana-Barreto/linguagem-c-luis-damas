@@ -4,10 +4,9 @@ indique se esse inteiro é ou não igual a zero */
 // Primeira forma
 
 #include <stdio.h>
-int main() 
-{
-    int num;
 
+int main() {
+    int num;
     printf("Digite um número inteiro: ");
     scanf("%d", &num);
     if (num == 0) 

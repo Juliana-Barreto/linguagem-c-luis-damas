@@ -3,7 +3,6 @@ Bem vindos ao /Mundo\ da programação em "C" */
 
 #include <stdio.h>
 
-int main () 
-{
+int main () {
     printf("Bem vindos ao /Mundo\\ da programação em \"C\"\n");
 }    
