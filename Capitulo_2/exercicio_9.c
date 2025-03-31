@@ -9,7 +9,7 @@ int main()
 
     printf("Digite o dia: ");
     scanf("%d", &dia);
-    if (dia < 1 || dia > 31){
+    if (dia < 1 || dia > 31){   
         printf("Dia inválido\n");
         return 1;}   
 
