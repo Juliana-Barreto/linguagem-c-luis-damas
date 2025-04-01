@@ -3,9 +3,9 @@ até que o valor deste esteja entre os valores 1 e 100 */
 
 #include <stdio.h>
 
-int main () {
+int main() {
     int num;
-    do{
+    do {
         printf("Introduza um número: ");
         scanf ("%d", &num);
     }
