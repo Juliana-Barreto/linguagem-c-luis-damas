@@ -12,5 +12,5 @@ int main(){
     if isalpha (c) 
         printf ("%c é uma letra do alfabeto\n", c);
     else 
-        printf ("%c não é é uma letra do alfabeto\n", c);
+        printf ("%c não é uma letra do alfabeto\n", c);
 }
