@@ -1,5 +1,4 @@
-/* Implemente a seguinte função:
-float VAL(float x, int n, float t)
+/* Implemente a seguinte função: float VAL(float x, int n, float t).
 Devolve o VAL (Valor atual Líquido) para n anos, à taxa t e é definido através da seguinte fórmula:
 VAL = x / (1 + t) + x / (1 + t)² + x / (1 + t)³ + ... + x / (1 + t)^n */
 

@@ -1,6 +1,5 @@
-/* Implemente a seguinte função: 
-int Abs(int x) 
-devolve o valor absoluto de x.*/
+/* Implemente a seguinte função: int Abs(int x). 
+Devolve o valor absoluto de x.*/
 
 #include <stdio.h>
 

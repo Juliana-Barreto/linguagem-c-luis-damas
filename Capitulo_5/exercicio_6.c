@@ -1,5 +1,4 @@
-/* Implemente a seguinte função:
-long int n_segundos(int n_horas)
+/* Implemente a seguinte função: long int n_segundos(int n_horas).
 Devolve o número de segundos existente em um conjunto de horas. */
 
 #include <stdio.h>
