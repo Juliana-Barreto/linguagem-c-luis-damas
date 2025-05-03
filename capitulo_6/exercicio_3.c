@@ -9,16 +9,17 @@ void ImprimirMatriz(int v[MAX][MAX]) {
     for (j = 0; j < MAX; j++) {
       printf("%3d", v[i][j]);
     }
-  printf("\n");
+  printf("\n"); // Nova linha após cada linha da matriz
   }
 }
 void transpor(int v[MAX][MAX]){
   int aux, i, j;
+  // Percorre apenas a parte superior da matriz (evita dupla troca)
   for (i = 0; i < MAX; i++) {
     for (j = i+1; j < MAX; j++) {
-      aux = v[i][j];
-      v[i][j] = v[j][i];
-      v[j][i] = aux;
+      aux = v[i][j]; // Armazena valor temporário
+      v[i][j] = v[j][i]; // Troca linha por coluna
+      v[j][i] = aux; // Completa a transposição
     }
   }  
 }

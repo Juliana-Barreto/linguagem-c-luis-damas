@@ -15,15 +15,13 @@ int main() {
         scanf("%d", &lim_inf);
         if (lim_inf > x)
              printf("Erro! Insira um valor menor que %d\n", x);
-    }
-    while (lim_inf > x);
+    } while (lim_inf > x); 
     do {
     printf("Insira o limite superior: ");
     scanf("%d", &lim_sup);
         if (lim_inf > lim_sup || lim_inf == lim_sup)
             printf("Erro! Insira um valor maior que %d\n", lim_inf);
-    }
-    while (lim_inf > lim_sup || lim_inf == lim_sup);
+    } while (lim_inf > lim_sup || lim_inf == lim_sup);
     if (Entre (x, lim_inf, lim_sup))
         printf("%d se encontra no intervalo [%d, %d]\n", x, lim_inf, lim_sup);
     else

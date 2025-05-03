@@ -4,10 +4,11 @@ Devolve o último índice em que encontrou o caractere c em s. Caso não exista,
 #include <stdio.h>
 
 int ult_ind_chr(char *s, char c){
-  int ind = -1;
+  int ind = -1; // Inicializa com -1 (não encontrado)
+  // Percorre toda a string
   for (int i = 0; s[i] != '\0'; i++) {
-    if (s[i] == c)
-      ind = i;
+    if (s[i] == c) // Se encontrar o caractere
+      ind = i; // Atualiza o índice com a última posição encontrada
   }
   return ind;
 }

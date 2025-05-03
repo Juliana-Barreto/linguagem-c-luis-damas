@@ -6,10 +6,10 @@ Retorna o maior número entre os n primeiros elementos do vetor.*/
 
 float MaiorValor(float v[], int n) {
   int i;
-  float maior = v[0];
+  float maior = v[0]; // Assume primeiro elemento como o maior inicialmente
   for (i=1; i<n; i++){
     if (v[i]> maior)
-      maior = v[i];
+      maior = v[i]; // Atualiza o maior valor quando encontra um maior
   }
   return maior;
 }
@@ -18,7 +18,8 @@ int main() {
   float maior;
   printf("Quantos números deseja verificar? ");
   scanf("%d", &n);
-  float v[n];
+  float v[n]; // Declara vetor com tamanho informado
+  // Preenche o vetor com os valores digitados
   for (i=0; i<n; i++) {
     printf("Insira o %dº número: ", i + 1);
     scanf ("%f", &v[i]);

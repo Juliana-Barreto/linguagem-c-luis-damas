@@ -7,15 +7,17 @@ VAL = x / (1 + t) + x / (1 + t)² + x / (1 + t)³ + ... + x / (1 + t)^n */
 float Pot (float base, int exp){ 
     int i;
     float pot;
+    // Loop que multiplica a base 'exp' vezes
     for (i = 1, pot = 1.0; i <= exp; i++)
-    pot *= base;
+    pot *= base; // Multiplica o resultado acumulado pela base
     return pot;
 }
 float VAL (float x, int n, float t){
     int i;
     float val;
+    // Loop que calcula o somatório dos valores presentes
     for (i = 1, val = 1.0; i <= n; i++)
-    val += x / Pot(1+t, i);
+    val += x / Pot(1+t, i); // Adiciona o valor presente de cada fluxo
     return val;
 }
 int main () {

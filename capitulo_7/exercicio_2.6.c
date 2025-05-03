@@ -7,11 +7,14 @@ os caracteres estão em maiúsculas ou minúsculas (ignore case).*/
 
 int stricmp(char *s1, char *s2) {
   int i = 0;
+  // Percorre as strings enquanto os caracteres (em minúsculo) forem iguais
   while (tolower(s1[i])==tolower(s2[i])) {
-    if (s1[i] != '\0' || s2[i] != '\0')
+    // Se chegou ao final de qualquer string, para o loop
+    if (s1[i] == '\0' || s2[i] == '\0')
       break;
     i++;
   }
+  // Retorna a diferença entre os caracteres diferentes
   return(tolower(s1[i]) - tolower(s2[i]));
 }
 int main () {
