@@ -1,9 +1,9 @@
-/*Implemente em C a seguinte função: char* init_str(char *s). 
+/*Implemente em C a seguinte função: char *init_str(char *s). 
 Torna a string s vazia.*/
 
 #include <stdio.h>
 
-char* init_str(char *s) {
+char *init_str(char *s) {
   int i;
   s[0] = '\0';
   return s;

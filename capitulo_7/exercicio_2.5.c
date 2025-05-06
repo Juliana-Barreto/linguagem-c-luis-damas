@@ -1,11 +1,11 @@
-/*Implemente em C a seguinte função: char* strnset(char *s, char ch, int n). 
+/*Implemente em C a seguinte função: char *strnset(char *s, char ch, int n). 
 Coloca o caractere ch apenas nas primeiras n posições da string s.
 Se n > strlen(s) então n toma o valor de strlen(s).*/
 
 #include <stdio.h>
 #include <string.h>
 
-char* strnset(char *s, char ch, int n) {
+char *strnset(char *s, char ch, int n) {
   for (int i = 0; i <= n; i++)
   s[i] = ch;
 return s;

@@ -1,11 +1,11 @@
-/*Implemente em C a seguinte função: char* strlwr(char *str). 
+/*Implemente em C a seguinte função: char *strlwr(char *str). 
 Coloca todos os caracteres de str em minúsculas.*/
 
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
 
-char* strlwr(char *str){
+char *strlwr(char *str){
   for (int i = 0; str[i] != '\0'; i++)
     str[i] = tolower(str[i]);
 return str;
