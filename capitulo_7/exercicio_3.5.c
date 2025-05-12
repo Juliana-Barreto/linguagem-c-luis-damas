@@ -30,6 +30,6 @@ char *xspace (char *s) {
 int main () {
   char s[200];
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(s);
+  fgets(s, sizeof(s), stdin);
   printf("String modificada: %s\n", xspace(s));
 }

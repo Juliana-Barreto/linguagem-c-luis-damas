@@ -22,7 +22,7 @@ int main() {
   char string[100];
   do {
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(string);
+  fgets(string, sizeof(string), stdin);
   if (!isalpha(string[0]))
     printf("Inválido. O primeiro caractere da string deve ser alfabético.\n");
   } while (!isalpha(string[0]));

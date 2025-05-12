@@ -16,7 +16,7 @@ int main(){
   char s[100];
   int n;
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(s);
+  fgets(s, sizeof(s), stdin);
   do {
     printf("Digite o intervalo de caracteres a serem mantidos (ex: 2 para pegar 1º, 3º, 5º... caracteres): ");
     scanf("%d", &n);

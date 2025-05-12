@@ -15,7 +15,7 @@ int strcounta(char *s) {
 int main(){
   char s[100];
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(s);
+  fgets(s, sizeof(s), stdin);
   printf("De \"%s\", %d são caracteres alfabéticos.\n", s, strcounta(s));
   return 0;
 }

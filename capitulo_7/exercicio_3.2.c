@@ -10,8 +10,8 @@ char n_esimo(char *s, int n) {
   int main(){
     char s[100];
     int n;
-    printf("Insira uma string (máximo 99 caracteres): ");
-    gets(s);
+    printf("Insira uma string: ");
+    fgets(s, sizeof(s), stdin);
     do {
       printf("Digite a posição do caractere que deseja (1 a %lu): ", strlen(s)); 
       scanf("%d", &n);

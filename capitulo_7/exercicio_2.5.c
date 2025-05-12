@@ -14,8 +14,8 @@ int main(){
   char s[100];
   char ch;
   int n;
-  printf("Insira uma string (máximo 99 caracteres): ");
-  gets(s);
+  printf("Insira uma string: ");
+  fgets(s, sizeof(s), stdin);
   printf("Insira um caractere para preencher a string: ");
   ch = getchar();
   printf("Informe a quantidade de caracteres a serem substituídos: ");

@@ -16,6 +16,6 @@ char *strduplica(char *s) {
 int main () {
   char s[200];
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(s);
+  fgets(s, sizeof(s), stdin);
   printf("String duplicada: '%s'\n", strduplica(s));
 }

@@ -17,7 +17,7 @@ int main(){
   char c;
   int ind;
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(s);
+  fgets(s, sizeof(s), stdin);
   printf("Insira um caractere para ser checado: ");
   c = getchar();
   ind = ult_ind_chr(s, c);

@@ -21,9 +21,9 @@ int main () {
   char s1[100], s2[100];
   int dif;
   printf("Insira a 1ª string (máximo 99 caracteres): ");
-  gets(s1);
+  fgets(s1, sizeof(s1), stdin);
   printf("Insira a 2ª string (máximo 99 caracteres): ");
-  gets(s2);
+  fgets(s2, sizeof(s2), stdin);
   dif = stricmp(s1, s2);
   if (dif < 0)
     printf("A primeira string vem antes da segunda.\n");

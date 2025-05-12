@@ -11,7 +11,7 @@ int main () {
   char string[100];
   int comprimento;
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(string);
+  fgets(string, sizeof(string), stdin);
   printf("Qual o seu comprimento? ");
   scanf("%d", &comprimento);
   if (Is_Len_OK(string, comprimento))

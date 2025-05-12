@@ -5,7 +5,7 @@
 int main() {
   char nome[25+1];
   printf("Insira um nome: ");
-  gets(nome);
+  fgets(nome, sizeof(nome), stdin);
   puts(nome);
   return 0;
 }

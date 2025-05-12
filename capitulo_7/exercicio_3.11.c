@@ -13,7 +13,7 @@ int main () {
   char s[100], ch;
   int i, j;
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(s);
+  fgets(s, sizeof(s), stdin);
   do {
     printf("Insira o limite inferior: ");
     scanf("%d", &i);

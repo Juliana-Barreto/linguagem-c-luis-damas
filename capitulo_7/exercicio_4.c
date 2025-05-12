@@ -41,7 +41,7 @@ int main() {
   int cont;
   do {
     printf("Insira o seu nome completo: ");
-    gets(nome_completo);
+    fgets(nome_completo, sizeof(nome_completo), stdin);
     cont = strcountc (nome_completo, ESPACO);
     if (cont < 1)
     printf("Resposta inválida. Deve incluir o seu sobrenome.\n");

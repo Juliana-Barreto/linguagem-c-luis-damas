@@ -11,7 +11,7 @@ char *init_str(char *s) {
 int main(){
   char s[100];
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(s);
+  fgets(s, sizeof(s), stdin);
   printf("String original: \"%s\"\n", s);
   printf("String após função init_str(): \"%s\"\n", init_str(s));
   return 0;

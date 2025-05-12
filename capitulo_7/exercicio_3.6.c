@@ -16,7 +16,7 @@ char Max_Ascii(char *str) {
 int main () {
   char str[100], ch;
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(str);
+  fgets(str, sizeof(str), stdin);
   ch = Max_Ascii(str);
   if(ch != '\0')
     printf("O caractere com maior código ASCII (%d) dessa string é \'%c\'\n", (int)ch, ch);

@@ -14,7 +14,7 @@ int main(){
   char str[100], org[100];
   int ind;
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(str);
+  fgets(str, sizeof(str), stdin);
   strcpy(org, str);
   printf("A string \'%s\' em minúsculo é: \'%s\'\n", org, strlwr(str));
   return 0;

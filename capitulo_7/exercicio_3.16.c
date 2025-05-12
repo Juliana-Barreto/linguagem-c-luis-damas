@@ -16,6 +16,6 @@ char *All_Big(char *s) {
 int main () {
   char s[100];
   printf("Insira uma string (máximo 99 caracteres): ");
-  gets(s);
+  fgets(s, sizeof(s), stdin);
   printf("String modificada: '%s'\n", All_Big(s));
 }
