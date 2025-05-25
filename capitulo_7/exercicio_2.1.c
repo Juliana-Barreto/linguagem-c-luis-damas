@@ -3,6 +3,7 @@ Devolve o nº de caracteres alfabéticos em s.*/
 
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 int strcounta(char *s) {
   int i, cont;

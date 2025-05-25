@@ -28,14 +28,22 @@ char *minha_strstr(char *str1, char *str2) {
   // Se não encontrou nenhuma correspondência, retorna NULL
   return NULL;
 }
+
 int main () {
-  char str1[100], str2[100];
-  printf("Insira uma string (máximo 99 caracteres): ");
+  char str1[101], str2[101];
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(str1, sizeof(str1), stdin);
   str1[strcspn(str1, "\n")] = '\0';
-  printf("Insira a substring: ");
+  printf("Insira uma substring: ");
   fgets(str2, sizeof(str2), stdin);
   str2[strcspn(str2, "\n")] = '\0';
-  printf("O endereço da substring é: %p\n", minha_strstr(str1, str2));
+  char *resultado = minha_strstr(str1, str2);
+  if (resultado != NULL) {
+    printf("O endereço da substring é: %p\n", resultado);
+  }
+  else {
+    printf("A substring não existe na string\n");
+  }
+  return 0;
 }
 

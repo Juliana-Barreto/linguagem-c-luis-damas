@@ -46,10 +46,10 @@ void Jogada(char tab[TAMANHO][TAMANHO], int n) {
   char simbolo = (n == 1) ? 'X' : 'O'; // Define símbolo do jogador
   while (1) {
     printf("JOGADOR %d\n", n);
-    printf("Linha(1 a 3): ", n);
+    printf("Linha(1 a 3): ");
     scanf("%d", &linha);
     getchar(); // Captura o ENTER
-    printf("Coluna(1 a 3): ", n);
+    printf("Coluna(1 a 3): ");
     scanf("%d", &coluna);    
     linha--; coluna--; //Converte para índices 0-2
     if (ValidarJogada(tab, linha, coluna)) {
@@ -103,7 +103,7 @@ int main() {
     }
     jogadas++;
     if (VerificarEmpate(jogadas))
-    break;
+      break;
     // Jogador 2 (O)  
     Jogada(tab, 2);
     ImprimirTabuleiro(tab);
@@ -113,6 +113,6 @@ int main() {
     }
     jogadas++;
     if (VerificarEmpate(jogadas))
-    break;
+      break;
   }
 }

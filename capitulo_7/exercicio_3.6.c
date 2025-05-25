@@ -6,7 +6,7 @@ Devolve o caractere com maior código ASCII presente na string str. Se a string 
 
 char Max_Ascii(char *str) {
   char max = str[0];
-  if(str[0] = '\0')
+  if(str[0] == '\0')
     return '\0';
   for(int i = 1; str[i] != '\0'; i++) {
     if (str[i] > max)

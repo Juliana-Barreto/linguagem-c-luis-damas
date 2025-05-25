@@ -6,7 +6,7 @@ Se n > strlen(s) então n toma o valor de strlen(s).*/
 #include <string.h>
 
 char *strnset(char *s, char ch, int n) {
-  for (int i = 0; i <= n; i++)
+  for (int i = 0; i < n; i++)
     s[i] = ch;
   return s;
 }

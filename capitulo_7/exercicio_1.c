@@ -1,6 +1,7 @@
 //Declare uma string com a capacidade de armazenar um nome com 25 caracteres.
 
 #include <stdio.h>
+#include <string.h>
 
 int main() {
   char nome[27];

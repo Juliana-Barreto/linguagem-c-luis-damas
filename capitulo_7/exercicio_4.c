@@ -25,7 +25,7 @@ char *wordupr(char *s) {
   return s;
 }
 
-char separador(char *nome_completo) {
+void separador(char *nome_completo) {
   char nome[101], sobrenome[101];
   int i, j, k = 0;
   for (i = 0; nome_completo[i] != ' '; i++) {

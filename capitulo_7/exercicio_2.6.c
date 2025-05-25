@@ -4,6 +4,7 @@ os caracteres estão em maiúsculas ou minúsculas (ignore case).*/
 
 #include <stdio.h>
 #include <ctype.h> 
+#include <string.h>
 
 int stricmp(char *s1, char *s2) {
   int i = 0;

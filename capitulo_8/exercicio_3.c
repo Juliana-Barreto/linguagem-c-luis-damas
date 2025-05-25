@@ -16,15 +16,18 @@ char *minha_strrchr(char *s, char ch) {
   }
   return ocorrencia;
 }
+
 int main () {
-  char s[100];
-  printf("Insira o seu nome completo: ");
+  char s[101];
+  printf("Insira o seu nome completo (máx. 100 caracteres): ");
   fgets(s, sizeof(s), stdin);
   s[strcspn(s, "\n")] = '\0';
-  if (minha_strrchr(s, ' ') == NULL) {
+  char *resultado = minha_strrchr(s, ' ');
+  if (resultado == NULL) {
     printf("Resposta inválida. Deve incluir o seu sobrenome.\n");
   } else {
-    char *sobrenome = minha_strrchr(s, ' ') + 1;
+    char *sobrenome = resultado + 1;
     printf("Sobrenome: %s\n", sobrenome);
   }
+  return 0;
 }

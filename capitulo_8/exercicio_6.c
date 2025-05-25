@@ -19,12 +19,13 @@ char *strins(char *dest, char *orig) {
   }
   return dest;
 }
+
 int main () {
   char orig[101], dest[201];
-  printf("Insira uma string (máximo 99 caracteres): ");
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(orig, sizeof(orig), stdin);
   orig[strcspn(orig, "\n")] = '\0';
-  printf("Insira uma segunda string (máximo 99 caracteres):");
+  printf("Insira uma segunda string (máx. 99 caracteres):");
   fgets(dest, sizeof(dest), stdin);
   dest[strcspn(dest, "\n")] = '\0';
   printf("A string modificada é: %s\n", strins(dest, orig));
