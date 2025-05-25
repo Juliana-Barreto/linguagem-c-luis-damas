@@ -4,6 +4,7 @@ caractere Alfabético seguido de um Dígito. O primeiro caractere deve ser sempr
 
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 int Is_Alfa_Digit(char *string){
   for (int i = 0; string[i] != '\0'; i++) {
@@ -18,13 +19,15 @@ int Is_Alfa_Digit(char *string){
   }
   return 1;
 }
+
 int main() {
   char string[101];
   do {
-  printf("Insira uma string (máximo 99 caracteres): ");
-  fgets(string, sizeof(string), stdin);
-  if (!isalpha(string[0]))
-    printf("Inválido. O primeiro caractere da string deve ser alfabético.\n");
+    printf("Insira uma string (máximo 99 caracteres): ");
+    fgets(string, sizeof(string), stdin);
+    string[strcspn(string, "\n")] = '\0';
+    if (!isalpha(string[0]))
+      printf("Inválido. O primeiro caractere da string deve ser alfabético.\n");
   } while (!isalpha(string[0]));
   if(Is_Alfa_Digit(string))
     printf("Essa string contém alternadamente um caractere alfabético seguido de um dígito\n");

@@ -12,10 +12,12 @@ int strcounta(char *s) {
   }
   return cont;
 }
+
 int main(){
   char s[101];  // 101 para acomodar 99 chars + \n + \0
   printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
+  s[strcspn(s, "\n")] = '\0';
   printf("De \"%s\", %d são caracteres alfabéticos.\n", s, strcounta(s));
   return 0;
 }

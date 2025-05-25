@@ -11,6 +11,7 @@ long int num(int n_horas, char tipo) {
     default : return n_horas;
     }
 }
+
 int main () {
     int n_horas; 
     char tipo;

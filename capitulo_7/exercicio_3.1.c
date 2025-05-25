@@ -2,6 +2,7 @@
 Recebe uma string, retirando-lhe todos os caracteres que não se encontram repetidos.*/
 
 #include <stdio.h>
+#include <string.h>
 
 char *repeticoes(char *s){
   int i, j = 0, cont[256] = {0};
@@ -17,10 +18,12 @@ char *repeticoes(char *s){
   s[j] = '\0';
   return s;
 }
+
 int main(){
-char s[101];
-printf("Insira uma string (máx. 99 caracteres): ");
-fgets(s, sizeof(s), stdin);
-repeticoes(s);
-puts(s);
+  char s[101];
+  printf("Insira uma string (máx. 99 caracteres): ");
+  fgets(s, sizeof(s), stdin);
+  s[strcspn(s, "\n")] = '\0';
+  printf("String após remover caracteres não repetidos: %s\n", repeticoes(s));
+  return 0;
 }

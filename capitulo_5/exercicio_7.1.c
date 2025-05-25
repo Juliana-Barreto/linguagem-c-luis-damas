@@ -3,6 +3,7 @@ Devolve o número de segundos existente em um conjunto de horas.
 Resolver com if-else */
 
 #include <stdio.h>
+
 long int num(int n_horas, char tipo) {
     if (tipo == 'm')
     return n_horas * 60;
@@ -13,6 +14,7 @@ long int num(int n_horas, char tipo) {
             return n_horas;
     }
 }
+
 int main () {
     int n_horas; 
     char tipo;

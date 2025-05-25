@@ -13,6 +13,7 @@ float MaiorValor(float v[], int n) {
   }
   return maior;
 }
+
 int main() {
   int n, i;
   float maior;

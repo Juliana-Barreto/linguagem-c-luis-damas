@@ -12,6 +12,7 @@ float Max(float x, float y, float w) {
         else
                 return w;
 }
+
 int main() {
     float x, y, w;
     printf("Insira o primeiro número: ");

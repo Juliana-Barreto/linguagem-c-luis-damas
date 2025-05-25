@@ -6,6 +6,7 @@ Devolve um valor lógico que indica se o dobro de x é ou não igual a x². */
 int is_special(int x) {
   return 2*x==x*x;
 }
+
 int main(){
   int x;
   printf("Insira um número: ");

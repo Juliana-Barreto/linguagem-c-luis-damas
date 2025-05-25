@@ -14,6 +14,7 @@ int strcountc (char *s, char c) {
   }
   return cont;
 }
+
 char *xspace (char *s) {
   int tam = strlen(s), cont = strcountc(s, SPACE), novo_tam = tam + (tam - cont), j = --novo_tam;
   s[novo_tam] = '\0';
@@ -27,9 +28,12 @@ char *xspace (char *s) {
   }
   return s;                                                                                     
 }
+
 int main () {
-  char s[202];
+  char s[201]; // 201 para acomodar 99 chars + 99 spaces + \n + \0
   printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
+  s[strcspn(s, "\n")] = '\0';
   printf("String modificada: %s\n", xspace(s));
+  return 0;
 }

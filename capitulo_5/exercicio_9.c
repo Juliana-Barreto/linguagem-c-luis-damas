@@ -9,6 +9,7 @@ int Ímpar(int x) {
     else
         return 1;
 }
+
 int main() {
     int x;
     printf("Insira um número: ");

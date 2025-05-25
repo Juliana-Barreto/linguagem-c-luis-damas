@@ -4,6 +4,7 @@ Supõe-se que a separação entre as palavras é realizada por espaços em branc
 
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 char *wordupr(char *s) {
   s[0] = toupper(s[0]);
@@ -14,9 +15,12 @@ char *wordupr(char *s) {
       s[i] = tolower(s[i]);
   return s;
 }
-int main () {
+
+int main() {
   char s[101];
-  printf("Insira uma string (máximo 99 caracteres): ");
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
-  printf("String modificada: '%s'\n", wordupr(s));
+  s[strcspn(s, "\n")] = '\0';
+  printf("String após converter: %s\n", wordupr(s));
+  return 0;
 }

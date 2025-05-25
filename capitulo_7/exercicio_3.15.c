@@ -22,9 +22,12 @@ char *lower_upper(char *s) {
   strcat(s, direita);
   return s;
 }
-int main () {
-  char s[101];
-  printf("Insira uma string (máximo 99 caracteres): ");
-  fgets(s, sizeof(s), stdin);
-  printf("String modificada: '%s'\n", lower_upper(s));
+
+int main() {
+    char s[101];
+    printf("Insira uma string (máx. 99 caracteres): ");
+    fgets(s, sizeof(s), stdin);
+    s[strcspn(s, "\n")] = '\0';
+    printf("String reorganizada: %s\n", lower_upper(s));
+    return 0;
 }

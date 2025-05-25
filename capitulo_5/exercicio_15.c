@@ -6,6 +6,7 @@ Devolve o valor de x³. */
 int Cubo(int x) {
   return x*x*x;
 }
+
 int main(){
   int x;
   printf("Insira um número: ");

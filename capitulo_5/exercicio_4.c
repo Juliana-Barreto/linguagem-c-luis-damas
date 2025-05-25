@@ -9,6 +9,7 @@ int Abs (int x) {
     else
         return -x; 
 }
+
 int main () {
     int x, abs;
     printf("Insira um número: ");

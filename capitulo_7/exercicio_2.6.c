@@ -17,13 +17,16 @@ int stricmp(char *s1, char *s2) {
   // Retorna a diferença entre os caracteres diferentes
   return(tolower(s1[i]) - tolower(s2[i]));
 }
+
 int main () {
   char s1[101], s2[101];
   int dif;
   printf("Insira a 1ª string (máx. 99 caracteres): ");
   fgets(s1, sizeof(s1), stdin);
+  s1[strcspn(s1, "\n")] = '\0';
   printf("Insira a 2ª string (máx. 99 caracteres): ");
   fgets(s2, sizeof(s2), stdin);
+  s2[strcspn(s2, "\n")] = '\0';
   dif = stricmp(s1, s2);
   if (dif < 0)
     printf("A primeira string vem antes da segunda.\n");
@@ -32,4 +35,5 @@ int main () {
       printf("A segunda string vem antes da primeira.\n");
     else
       printf("As duas strings são iguais.\n");
+  return 0;
 }

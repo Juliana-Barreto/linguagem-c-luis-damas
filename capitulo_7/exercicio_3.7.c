@@ -2,6 +2,7 @@
 Coloca em cada posição da string s o próximo caractere ASCII.*/
 
 #include <stdio.h>
+#include <string.h>
 
 char *Prox_Char(char *s) {
   for (int i = 0; s[i] != '\0'; i++) {
@@ -9,9 +10,12 @@ char *Prox_Char(char *s) {
   }
   return s;
 }
-int main () {
+
+int main() {
   char s[101];
   printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
-  printf("String modificada: '%s'\n", Prox_Char(s));
+  s[strcspn(s, "\n")] = '\0';
+  printf("String modificada: %s\n", Prox_Char(s));
+  return 0;
 }

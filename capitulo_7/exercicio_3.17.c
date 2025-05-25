@@ -7,15 +7,18 @@ Verifica se o comprimento da string é igual ao valor que é enviado à função
 int Is_Len_OK(char *string, int comprimento) {
   return strlen(string) == comprimento;
 }
-int main () {
+
+int main() {
   char string[101];
   int comprimento;
   printf("Insira uma string (máximo 99 caracteres): ");
   fgets(string, sizeof(string), stdin);
+  string[strcspn(string, "\n")] = '\0';
   printf("Qual o seu comprimento? ");
   scanf("%d", &comprimento);
   if (Is_Len_OK(string, comprimento))
-    printf("Certo, o comprimento da string é %d\n", &comprimento);
+    printf("Certo, o comprimento da string é %d\n", comprimento);
   else
     printf("Errado, o comprimento da string é %.0ld\n", strlen(string));
+  return 0;
 }

@@ -12,6 +12,7 @@ float Pot (float base, int exp){
     pot *= base; // Multiplica o resultado acumulado pela base
     return pot;
 }
+
 float VAL (float x, int n, float t){
     int i;
     float val;
@@ -20,6 +21,7 @@ float VAL (float x, int n, float t){
     val += x / Pot(1+t, i); // Adiciona o valor presente de cada fluxo
     return val;
 }
+
 int main () {
     int n;
     float x, t, resp;

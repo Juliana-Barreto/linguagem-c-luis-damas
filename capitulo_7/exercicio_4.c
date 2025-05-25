@@ -14,6 +14,7 @@ int strcountc (char *s, char c) {
   }
   return cont;
 }
+
 char *wordupr(char *s) {
   s[0] = toupper(s[0]);
   for(int i = 1; s[i] != '\0'; i++)
@@ -23,6 +24,7 @@ char *wordupr(char *s) {
       s[i] = tolower(s[i]);
   return s;
 }
+
 char separador(char *nome_completo) {
   char nome[101], sobrenome[101];
   int i, j, k = 0;
@@ -36,15 +38,18 @@ char separador(char *nome_completo) {
   sobrenome[k] = '\0';
   printf("%s, %s", wordupr(sobrenome), wordupr(nome));
 }
+
 int main() {
   char nome_completo[101];
   int cont;
   do {
     printf("Insira o seu nome completo: ");
     fgets(nome_completo, sizeof(nome_completo), stdin);
+    nome_completo[strcspn(nome_completo, "\n")] = '\0';
     cont = strcountc (nome_completo, ESPACO);
     if (cont < 1)
-    printf("Resposta inválida. Deve incluir o seu sobrenome.\n");
+      printf("Resposta inválida. Deve incluir o seu sobrenome.\n");
   } while (cont < 1);
   separador(nome_completo);
+  return 0;
 }

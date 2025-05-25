@@ -6,6 +6,7 @@ Verifica se x se encontra no intervalo lim_inf <= x <= lim_sup */
 int Entre (int x, int lim_inf, int lim_sup) {
     return lim_inf <= x && x <= lim_sup;
 }
+
 int main() {
     int x, lim_inf, lim_sup;
     printf("Insira um valor: ");

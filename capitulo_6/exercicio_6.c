@@ -12,6 +12,7 @@ int memcmp(char *s1, char *s2, int n){
   }
   return 1;
 }
+
 int main(){
   char s1[] = "Hello, world!\n";
   char s2[] = "Hello, user!\n";

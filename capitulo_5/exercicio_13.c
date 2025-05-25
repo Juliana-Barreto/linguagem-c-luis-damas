@@ -9,6 +9,7 @@ int Minus(int Valor) {
   else
     return Valor;
 }
+
 int main(){
   int Valor;
   printf("Insira um número: ");

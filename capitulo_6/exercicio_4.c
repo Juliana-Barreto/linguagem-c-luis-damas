@@ -12,6 +12,7 @@ void IniciarVar(char v[TAMANHO][TAMANHO]) {
     v[linha][coluna] = ' ';
   }
 }
+
 // Exibe o tabuleiro formatado com linhas divisórias
 void ImprimirTabuleiro(char tab[TAMANHO][TAMANHO]) {
   int linha, coluna;
@@ -28,6 +29,7 @@ void ImprimirTabuleiro(char tab[TAMANHO][TAMANHO]) {
   }
   printf("\n");
 }
+
 // Valida se a jogada está dentro dos limites e em célula vazia
 int ValidarJogada(char tab[TAMANHO][TAMANHO], int linha, int coluna) {
   if (linha < 0 || linha >= TAMANHO || coluna < 0 || coluna >= TAMANHO || tab[linha][coluna] != ' ') {
@@ -37,6 +39,7 @@ int ValidarJogada(char tab[TAMANHO][TAMANHO], int linha, int coluna) {
   else
     return 1;
 }
+
 // Processa a jogada de um jogador
 void Jogada(char tab[TAMANHO][TAMANHO], int n) {
   int linha, coluna;
@@ -55,6 +58,7 @@ void Jogada(char tab[TAMANHO][TAMANHO], int n) {
     }
   }
 }
+
 // Verifica se algum jogador venceu
 int VerificarVencedor(char tab[TAMANHO][TAMANHO]) {
   int linha, coluna;
@@ -74,6 +78,7 @@ int VerificarVencedor(char tab[TAMANHO][TAMANHO]) {
     return 1;
   return 0;
 }
+
 // Verifica se houve empate (todas células preenchidas)
 int VerificarEmpate(int jogadas) {
   if (jogadas == 9) { // Tabuleiro completo (3x3 = 9 jogadas)

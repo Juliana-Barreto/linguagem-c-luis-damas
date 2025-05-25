@@ -6,6 +6,7 @@ Devolve um valor lógico que indica se x é ou não igual a y². */
 int is_square(int x, int y) {
   return x==y*y;
 }
+
 int main(){
   int x, y;
   printf("Insira um número: ");

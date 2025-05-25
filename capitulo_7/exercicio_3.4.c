@@ -12,11 +12,13 @@ char *Entremeado(char *s, int n) {
   s[j] = '\0';
   return s;
 }
+
 int main(){
   char s[101];
   int n;
   printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
+  s[strcspn(s, "\n")] = '\0';
   do {
     printf("Digite o intervalo de caracteres a serem mantidos (ex: 2 para pegar 1º, 3º, 5º... caracteres): ");
     scanf("%d", &n);
@@ -26,4 +28,5 @@ int main(){
       printf("O intervalo deve ser um número positivo!\n");
   } while ((n > strlen(s) || (n <= 0)));
   printf("A string alterada ficou: \'%s\'\n", Entremeado(s, n));
+  return 0;
 }

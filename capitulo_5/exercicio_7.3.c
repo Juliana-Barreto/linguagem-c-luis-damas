@@ -12,6 +12,7 @@ long int num(int n_horas, char tipo) {
     }
     return res;
 }
+
 int main () {
     int n_horas; 
     char tipo;

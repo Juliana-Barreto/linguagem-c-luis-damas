@@ -3,6 +3,7 @@ Recebe uma string e deixa-lhe apenas os caracteres maiúsculos.*/
 
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 char *All_Big(char *s) {
   int i, j = 0;
@@ -13,9 +14,12 @@ char *All_Big(char *s) {
   s[j] = '\0';
   return s;
 }
-int main () {
-  char s[101];
-  printf("Insira uma string (máximo 99 caracteres): ");
-  fgets(s, sizeof(s), stdin);
-  printf("String modificada: '%s'\n", All_Big(s));
+
+int main() {
+    char str[201];
+    printf("Digite uma string (máx. 200 caracteres): ");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = '\0';
+    printf("Apenas maiúsculas: %s\n", All_Big(str));
+    return 0;
 }

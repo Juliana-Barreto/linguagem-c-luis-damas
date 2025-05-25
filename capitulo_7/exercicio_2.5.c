@@ -7,15 +7,17 @@ Se n > strlen(s) então n toma o valor de strlen(s).*/
 
 char *strnset(char *s, char ch, int n) {
   for (int i = 0; i <= n; i++)
-  s[i] = ch;
-return s;
+    s[i] = ch;
+  return s;
 }
+
 int main(){
   char s[101];
   char ch;
   int n;
   printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
+  s[strcspn(s, "\n")] = '\0';
   printf("Insira um caractere para preencher a string: ");
   ch = getchar();
   printf("Informe a quantidade de caracteres a serem substituídos: ");
@@ -23,4 +25,5 @@ int main(){
   if(n > strlen(s))
     n = strlen(s);
   printf("A string alterada ficou: \'%s\'\n", strnset(s, ch, n));
+  return 0;
 }

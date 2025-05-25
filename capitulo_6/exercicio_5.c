@@ -12,6 +12,7 @@ char *memcpy(char *dest, char *orig, int n){
   }
   return dest;
 }
+
 int main(){
   char orig[] = "Hello, world!";
   char dest[20];

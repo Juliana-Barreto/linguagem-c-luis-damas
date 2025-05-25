@@ -15,9 +15,12 @@ char *Transform(char *s) {
   }
   return s;
 }
-int main () {
+
+int main() {
   char s[101];
-  printf("Insira uma string (máximo 99 caracteres): ");
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
-  printf("String modificada: '%s'\n", Transform(s));
+  s[strcspn(s, "\n")] = '\0';
+  printf("String transformada: %s\n", Transform(s));
+  return 0;
 }

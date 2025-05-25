@@ -3,6 +3,7 @@ Que transpõe a matriz v com MAX por MAX elementos.*/
 
 #include <stdio.h>
 #define MAX 5
+
 void ImprimirMatriz(int v[MAX][MAX]) {
   int i, j;
   for (i = 0; i < MAX; i++) {
@@ -12,6 +13,7 @@ void ImprimirMatriz(int v[MAX][MAX]) {
   printf("\n"); // Nova linha após cada linha da matriz
   }
 }
+
 void transpor(int v[MAX][MAX]){
   int aux, i, j;
   // Percorre apenas a parte superior da matriz (evita dupla troca)
@@ -23,6 +25,7 @@ void transpor(int v[MAX][MAX]){
     }
   }  
 }
+
 int main() {
   int v[MAX][MAX], i, j;
   for (i = 0; i < MAX; i++) {
