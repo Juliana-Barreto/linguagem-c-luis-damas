@@ -11,10 +11,10 @@ char *strnset(char *s, char ch, int n) {
 return s;
 }
 int main(){
-  char s[100];
+  char s[101];
   char ch;
   int n;
-  printf("Insira uma string: ");
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   printf("Insira um caractere para preencher a string: ");
   ch = getchar();

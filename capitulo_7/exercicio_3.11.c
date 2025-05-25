@@ -10,9 +10,9 @@ char *strijset(char *s, int i, int j, char ch) {
   return s;
 }
 int main () {
-  char s[100], ch;
+  char s[101], ch;
   int i, j;
-  printf("Insira uma string (máximo 99 caracteres): ");
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   do {
     printf("Insira o limite inferior: ");

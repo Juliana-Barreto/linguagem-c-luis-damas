@@ -11,9 +11,9 @@ char *strlwr(char *str){
 return str;
 }
 int main(){
-  char str[100], org[100];
+  char str[101], org[101];
   int ind;
-  printf("Insira uma string (máximo 99 caracteres): ");
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(str, sizeof(str), stdin);
   strcpy(org, str);
   printf("A string \'%s\' em minúsculo é: \'%s\'\n", org, strlwr(str));

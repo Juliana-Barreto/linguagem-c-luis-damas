@@ -18,8 +18,8 @@ char *repeticoes(char *s){
   return s;
 }
 int main(){
-char s[100];
-printf("Insira uma string: ");
+char s[101];
+printf("Insira uma string (máx. 99 caracteres): ");
 fgets(s, sizeof(s), stdin);
 repeticoes(s);
 puts(s);

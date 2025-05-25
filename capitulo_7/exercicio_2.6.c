@@ -18,11 +18,11 @@ int stricmp(char *s1, char *s2) {
   return(tolower(s1[i]) - tolower(s2[i]));
 }
 int main () {
-  char s1[100], s2[100];
+  char s1[101], s2[101];
   int dif;
-  printf("Insira a 1ª string (máximo 99 caracteres): ");
+  printf("Insira a 1ª string (máx. 99 caracteres): ");
   fgets(s1, sizeof(s1), stdin);
-  printf("Insira a 2ª string (máximo 99 caracteres): ");
+  printf("Insira a 2ª string (máx. 99 caracteres): ");
   fgets(s2, sizeof(s2), stdin);
   dif = stricmp(s1, s2);
   if (dif < 0)

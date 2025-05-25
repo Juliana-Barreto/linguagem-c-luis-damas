@@ -13,10 +13,10 @@ int ult_ind_chr(char *s, char c){
   return ind;
 }
 int main(){
-  char s[100];
+  char s[101];
   char c;
   int ind;
-  printf("Insira uma string (máximo 99 caracteres): ");
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   printf("Insira um caractere para ser checado: ");
   c = getchar();

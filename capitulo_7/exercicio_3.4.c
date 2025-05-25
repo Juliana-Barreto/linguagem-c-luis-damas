@@ -13,9 +13,9 @@ char *Entremeado(char *s, int n) {
   return s;
 }
 int main(){
-  char s[100];
+  char s[101];
   int n;
-  printf("Insira uma string (máximo 99 caracteres): ");
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   do {
     printf("Digite o intervalo de caracteres a serem mantidos (ex: 2 para pegar 1º, 3º, 5º... caracteres): ");

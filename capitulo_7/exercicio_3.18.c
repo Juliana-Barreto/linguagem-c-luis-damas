@@ -19,7 +19,7 @@ int Is_Alfa_Digit(char *string){
   return 1;
 }
 int main() {
-  char string[100];
+  char string[101];
   do {
   printf("Insira uma string (máximo 99 caracteres): ");
   fgets(string, sizeof(string), stdin);

@@ -8,9 +8,9 @@ char n_esimo(char *s, int n) {
   return s[n-1]; //porque o usuário conta a partir de 1
 }
   int main(){
-    char s[100];
+    char s[101];
     int n;
-    printf("Insira uma string: ");
+    printf("Insira uma string (máx. 99 caracteres): ");
     fgets(s, sizeof(s), stdin);
     do {
       printf("Digite a posição do caractere que deseja (1 a %lu): ", strlen(s)); 

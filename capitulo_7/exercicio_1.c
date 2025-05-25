@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main() {
-  char nome[25+1];
+  char nome[27];
   printf("Insira um nome: ");
   fgets(nome, sizeof(nome), stdin);
   puts(nome);

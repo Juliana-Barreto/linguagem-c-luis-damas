@@ -10,8 +10,8 @@ char *UpDown(char *s) {
   return s;
 }
 int main () {
-  char s[100];
-  printf("Insira uma string (máximo 99 caracteres): ");
+  char s[101];
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   printf("String modificada: '%s'\n", UpDown(s));
 }

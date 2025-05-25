@@ -14,8 +14,8 @@ char Max_Ascii(char *str) {
   return max;
 }
 int main () {
-  char str[100], ch;
-  printf("Insira uma string (máximo 99 caracteres): ");
+  char str[101], ch;
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(str, sizeof(str), stdin);
   ch = Max_Ascii(str);
   if(ch != '\0')

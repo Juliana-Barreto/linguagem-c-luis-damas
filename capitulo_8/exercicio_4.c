@@ -32,10 +32,10 @@ int main () {
   char str1[100], str2[100];
   printf("Insira uma string (máximo 99 caracteres): ");
   fgets(str1, sizeof(str1), stdin);
-  str1[strcspn(str1, "\n")] = 0;
+  str1[strcspn(str1, "\n")] = '\0';
   printf("Insira a substring: ");
   fgets(str2, sizeof(str2), stdin);
-  str2[strcspn(str2, "\n")] = 0;
+  str2[strcspn(str2, "\n")] = '\0';
   printf("O endereço da substring é: %p\n", minha_strstr(str1, str2));
 }
 

@@ -20,7 +20,7 @@ int atoi(char *s) {
   return result * sinal;
 }
 int main() {
-  char s[100];
+  char s[101];
   printf("Insira uma string (máximo 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   printf("O inteiro correspondente é %d\n", atoi(s));

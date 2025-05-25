@@ -24,7 +24,7 @@ char *wordupr(char *s) {
   return s;
 }
 char separador(char *nome_completo) {
-  char nome[99], sobrenome[99];
+  char nome[101], sobrenome[101];
   int i, j, k = 0;
   for (i = 0; nome_completo[i] != ' '; i++) {
     nome[i] = nome_completo[i];
@@ -37,7 +37,7 @@ char separador(char *nome_completo) {
   printf("%s, %s", wordupr(sobrenome), wordupr(nome));
 }
 int main() {
-  char nome_completo[99];
+  char nome_completo[101];
   int cont;
   do {
     printf("Insira o seu nome completo: ");

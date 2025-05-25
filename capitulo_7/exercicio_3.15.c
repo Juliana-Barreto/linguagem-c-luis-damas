@@ -7,7 +7,7 @@ esquerda, pela mesma ordem que aparecem. Os que estão em maiúsculas são alinh
 #include <string.h>
 
 char *lower_upper(char *s) {
-  char esquerda[100], direita[100];
+  char esquerda[101], direita[101];
   int i, e = 0, d = 0;
   for(i = 0; s[i] != '\0'; i++) {
     if (islower(s[i]))
@@ -23,7 +23,7 @@ char *lower_upper(char *s) {
   return s;
 }
 int main () {
-  char s[100];
+  char s[101];
   printf("Insira uma string (máximo 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   printf("String modificada: '%s'\n", lower_upper(s));

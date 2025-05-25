@@ -9,8 +9,8 @@ char *init_str(char *s) {
   return s;
 }
 int main(){
-  char s[100];
-  printf("Insira uma string (máximo 99 caracteres): ");
+  char s[101];
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   printf("String original: \"%s\"\n", s);
   printf("String após função init_str(): \"%s\"\n", init_str(s));

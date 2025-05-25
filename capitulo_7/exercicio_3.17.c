@@ -8,7 +8,7 @@ int Is_Len_OK(char *string, int comprimento) {
   return strlen(string) == comprimento;
 }
 int main () {
-  char string[100];
+  char string[101];
   int comprimento;
   printf("Insira uma string (máximo 99 caracteres): ");
   fgets(string, sizeof(string), stdin);

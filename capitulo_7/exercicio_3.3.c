@@ -1,6 +1,8 @@
 /*Implemente em C a seguinte função: char *strpack(char *s).
 Recebe uma string e compacta num único caractere qualquer conjunto de caracteres repetidos consecutivos.*/
 
+#include <stdio.h>
+
 char *strpack(char *s) {
   int i, j = 0;
   for (i = 1; s[i] != '\0'; i++) {
@@ -13,8 +15,8 @@ char *strpack(char *s) {
   return s;
 }
 int main () {
-  char s[100];
-  printf("Insira uma string: ");
+  char s[101];
+  printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   printf("String compactada: %s\n", strpack(s));
 }
