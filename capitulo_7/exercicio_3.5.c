@@ -30,7 +30,7 @@ char *xspace (char *s) {
 }
 
 int main () {
-  char s[201]; // 201 para acomodar 99 chars + 99 spaces + \n + \0
+  char s[199]; // 199 para acomodar 99 chars + 99 spaces + \n
   printf("Insira uma string (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   s[strcspn(s, "\n")] = '\0';

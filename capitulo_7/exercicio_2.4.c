@@ -12,7 +12,7 @@ char *strlwr(char *str){
 }
 
 int main(){
-  char str[101], org[101];
+  char str[101], org[100];
   printf("Insira uma string (máx. 99 caracteres): ");
   fgets(str, sizeof(str), stdin);
   str[strcspn(str, "\n")] = '\0';

@@ -19,7 +19,7 @@ char *minha_strrchr(char *s, char ch) {
 
 int main () {
   char s[101];
-  printf("Insira o seu nome completo (máx. 100 caracteres): ");
+  printf("Insira o seu nome completo (máx. 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   s[strcspn(s, "\n")] = '\0';
   char *resultado = minha_strrchr(s, ' ');

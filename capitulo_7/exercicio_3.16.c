@@ -16,8 +16,8 @@ char *All_Big(char *s) {
 }
 
 int main() {
-    char str[201];
-    printf("Digite uma string (máx. 200 caracteres): ");
+    char str[101];
+    printf("Digite uma string (máx. 99 caracteres): ");
     fgets(str, sizeof(str), stdin);
     str[strcspn(str, "\n")] = '\0';
     printf("Apenas maiúsculas: %s\n", All_Big(str));

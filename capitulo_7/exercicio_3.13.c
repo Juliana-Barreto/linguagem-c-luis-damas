@@ -5,7 +5,7 @@ Recebe uma string e devolve o inteiro que nela está representado.*/
 #include <ctype.h>
 #include <string.h>
 
-int atoi(char *s) {
+int minha_atoi(char *s) {
   int sinal, result = 0, i = 0;
   if (s[0] == '-'){
     sinal = -1;
@@ -26,6 +26,6 @@ int main() {
   printf("Insira uma string (máximo 99 caracteres): ");
   fgets(s, sizeof(s), stdin);
   s[strcspn(s, "\n")] = '\0';
-  printf("O inteiro correspondente é %d\n", atoi(s));
+  printf("O inteiro correspondente é %d\n", minha_atoi(s));
   return 0;
 }

@@ -8,7 +8,7 @@ char *strins(char *dest, char *orig) {
   // Calcula o tamanho total necessário (dest + orig)
   int tam = strlen(dest) + strlen(orig);
   // Posiciona o terminador nulo no final da nova string
-  dest[tam + 1] = '\0';
+  dest[tam] = '\0';
   // i: índice da nova posição, j: índice da posição atual em dest
   for (int i = tam, j = strlen(dest); j >= 0; i--, j--) {
     dest[i] = dest[j];
@@ -21,7 +21,7 @@ char *strins(char *dest, char *orig) {
 }
 
 int main () {
-  char orig[101], dest[201];
+  char orig[101], dest[199];
   printf("Insira uma string (máx. 99 caracteres): ");
   fgets(orig, sizeof(orig), stdin);
   orig[strcspn(orig, "\n")] = '\0';

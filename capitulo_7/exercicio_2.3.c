@@ -11,7 +11,7 @@ int ult_ind_chr(char *s, char c){
     if (s[i] == c) // Se encontrar o caractere
       ind = i; // Atualiza o índice com a última posição encontrada
   }
-  return ind;
+  return ind + 1;
 }
 
 int main(){
